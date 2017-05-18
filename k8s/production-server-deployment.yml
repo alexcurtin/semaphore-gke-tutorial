@@ -12,7 +12,7 @@ spec:
       containers:
         - name: server
           # TODO: set zone and project
-          image: 'eu.gcr.io/semaphore-gke-tutorial/server'
+          image: 'us.gcr.io/spring-firefly-161118/server'
           imagePullPolicy: Always
           env:
             - name: "REDIS_URL"

@@ -4,8 +4,7 @@ set -euo pipefail
 
 main() {
 	# TODO: replace the project with your project ID
-	local project=semaphore-gke-tutorial
-
+	local project=spring-firefly-161118
 	# Pre-req for gcloud install
 	sudo apt-get update
 	sudo apt-get install -y apt-transport-https
@@ -36,7 +35,7 @@ main() {
 	echo "Configuring kubectl"
 	gcloud container clusters get-credentials demo \
 		--project "${project}" \
-		--zone europe-west1-b
+		--zone us-west1-a
 }
 
 main "$@"

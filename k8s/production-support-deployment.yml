@@ -12,7 +12,7 @@ spec:
       containers:
         - name: counter
           # TODO: set zone and project
-          image: 'eu.gcr.io/semaphore-gke-tutorial/counter'
+          image: 'us.gcr.io/spring-firefly-161118/counter'
           imagePullPolicy: Always
           env:
             - name: "API_URL"
@@ -21,7 +21,7 @@ spec:
 
         - name: poller
           # TODO: set zone and project
-          image: 'eu.gcr.io/semaphore-gke-tutorial/poller'
+          image: 'us.gcr.io/spring-firefly-161118/poller'
           imagePullPolicy: Always
           env:
             - name: "API_URL"
