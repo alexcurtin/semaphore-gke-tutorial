@@ -8,6 +8,7 @@ main() {
 	# Pre-req for gcloud install
 	sudo apt-get update
 	sudo apt-get install -y apt-transport-https
+	GOOGLE_APPLICATION_CREDENTIALS=/home/runner/auth.json
 
 	# Copied from the official install instructions on https://cloud.google.com/sdk/downloads#apt-get
 	export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
